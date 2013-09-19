@@ -22,6 +22,8 @@ $ vagrant up --provider=aws
 
 Environment variables
 -----
+See `Vagrantfile` for default values.
+
 `AWS_SSH_PRIVATE_KEY` - Path to your SSH private key
 `AWS_ACCESS_KEY_ID` -  your AWS access key
 `AWS_SECRET_ACCESS_KEY` - your AWS secret key
@@ -31,6 +33,8 @@ Environment variables
 
 Vagrantfile variables
 -----
+See `Vagrantfile` for default values.
+
 `SSH_USERNAME` - SSH user name, default "ubuntu"
 `AWS_AMI` - Your AMI ID, default Ubuntu 12.04.3 LTS / ap-northeast1 / 64bit /root store - instance)
 `AWS_SECURITY_GROUP` - Securiy group, default "default"
@@ -42,6 +46,8 @@ Vagrantfile variables
 
 Built times by EC2 Instance type
 -----
+Recommend instance type `c1.xlarge`.
+
 `m1.large` - 644.946883305 seconds
 `m1.xlarge` - 583.072030988 seconds
 `c1.xlarge` - 559.082035988 seconds.

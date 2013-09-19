@@ -6,10 +6,10 @@ Berkshelf + Vagnrat for Build ruby via rbenv + ruby-build, upload rbenv director
 Requirements
 ------------
 ### Platforms
-Ubuntu
+- Ubuntu
 
 ### Cookbooks
-[`simple-ruby-build`](https://github.com/n0ts/cookbook-simple-ruby-build)
+- [`simple-ruby-build`](https://github.com/n0ts/cookbook-simple-ruby-build)
 
 
 Usage

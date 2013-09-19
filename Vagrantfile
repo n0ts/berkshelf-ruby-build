@@ -16,8 +16,10 @@ AWS_AMI = "ami-17118c16"
 # m1.large => 644.946883305 seconds
 # m1.xlarge => 583.072030988 seconds
 # c1.xlarge => 559.082035988 seconds
-AWS_INSTANCE_TYPE = "m1.xlarge"
+AWS_INSTANCE_TYPE = "c1.xlarge"
 AWS_IAM_INSTANCE_PROFILE_NAME = "ec2-berkshelf-ruby-build"
+
+RBENV_INSTALL_PREFIX = "/opt"
 
 SIMPLE_RUBY_BUILD_VERSION = "2.0.0-p247"
 SIMPLE_RUBY_BUILD_AWS_S3_BUCKET = "simple-ruby-build"
@@ -125,7 +127,7 @@ Vagrant.configure("2") do |config|
       :rbenv => {
         :user           => "root",
         :group          => "root",
-        :install_prefix => "/opt",
+        :install_prefix => RBENV_INSTALL_PREFIX,
       },
       "simple-ruby-build" => {
         :ruby_version  => SIMPLE_RUBY_BUILD_VERSION,
@@ -137,6 +139,7 @@ Vagrant.configure("2") do |config|
 
     chef.run_list = [
                      "recipe[python::default]",
+                     "recipe[simple-ruby-build::rbenv_dir]",
                      "recipe[rbenv::default]",
                      "recipe[rbenv::ruby_build]",
                      "recipe[rbenv::rbenv_vars]",

@@ -39,7 +39,7 @@ See `Vagrantfile` for default values.
 - `AWS_AMI` - Your AMI ID, default Ubuntu 12.04.3 LTS / ap-northeast1 / 64bit /root store - instance
 - `AWS_SECURITY_GROUP` - Securiy group, default "default"
 - `AWS_INSTANCE_TYPE` - Instance Type, default "m1.xlarge"
-- `AWS_IAM_INSTANCE_PROFILE_NAME` - IAM role name, default "ec2-berkshelf-ruby-build"
+- `AWS_IAM_INSTANCE_PROFILE_NAME` - IAM role name, default "ec2-berkshelf-ruby-build", sample ec2 IAM poclicy `ec2-s3-policy.json`
 - `SIMPLE_RUBY_BUILD_VERSION` - Install ruby version, default "2.0.0-p247"
 - `SIMPLE_RUBY_BUILD_AWS_S3_BUCKET` - Copy S3 bucket name, default "simple-ruby-build"
 

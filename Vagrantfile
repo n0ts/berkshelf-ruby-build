@@ -115,13 +115,6 @@ Vagrant.configure("2") do |config|
       :Name => "berkshelf-ruby-build",
       :Description => "berkshelf simple ruby-build",
     }
-
-    #aws.block_device_mapping = [
-    #                            {
-    #                              :DeviceName => "/dev/sdb1",
-    #                              :VirtualName => "ephemeral0",
-    #                            },
-    #                           ]
   end
 
   config.vm.provision :chef_solo do |chef|

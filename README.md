@@ -27,7 +27,7 @@ See `Vagrantfile` for default values.
 - `AWS_SSH_PRIVATE_KEY` - Path to your SSH private key
 - `AWS_ACCESS_KEY_ID` -  your AWS access key
 - `AWS_SECRET_ACCESS_KEY` - your AWS secret key
-- `AWS_REGION` - your AWs region
+- `AWS_DEFUALTREGION` - your AWS default region
 - `AWS_KEYPAIR_NAME` - Key Pair Name
 
 

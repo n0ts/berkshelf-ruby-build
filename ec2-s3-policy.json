@@ -3,20 +3,27 @@
   "Statement": [
     {
       "Action": [
-        "s3:GetObject",
-        "s3:PutObjectAcl",
-        "s3:PutObject"
-      ],
+         "s3:ListAllMyBuckets"
+       ],
       "Effect": "Allow",
-      "Resource": "arn:aws:s3:::simple-ruby-build/*"
+      "Resource": "arn:aws:s3:::*"
     },
     {
       "Action": [
-         "s3:ListBucketMultipartUploads",
+         "s3:ListBucket",
          "s3:GetBucketLocation"
        ],
       "Effect": "Allow",
       "Resource": "arn:aws:s3:::simple-ruby-build"
+    },
+    {
+      "Action": [
+        "s3:DeleteObject",
+        "s3:GetObject",
+        "s3:PutObject"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:s3:::simple-ruby-build/*"
     }
   ]
 }
